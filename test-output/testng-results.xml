@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24468" started-at="2019-07-13T11:43:28Z" finished-at="2019-07-13T11:43:53Z">
+  <suite name="Failed suite [Suite]" duration-ms="15101" started-at="2019-07-13T18:01:06Z" finished-at="2019-07-13T18:01:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24468" started-at="2019-07-13T11:43:28Z" finished-at="2019-07-13T11:43:53Z">
+    <test name="Test(failed)" duration-ms="15101" started-at="2019-07-13T18:01:06Z" finished-at="2019-07-13T18:01:22Z">
       <class name="datadriven.WordPress">
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679]" name="login" duration-ms="6917" started-at="2019-07-13T17:13:28Z" data-provider="providelogininfo" finished-at="2019-07-13T17:13:35Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@490d6c15]" name="login" duration-ms="6892" started-at="2019-07-13T23:31:07Z" data-provider="providelogininfo" finished-at="2019-07-13T23:31:13Z">
           <params>
             <param index="0">
               <value>
@@ -43,66 +43,27 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:datadriven.WordPress@29774679]" name="tearDown" is-config="true" duration-ms="1132" started-at="2019-07-13T17:13:35Z" finished-at="2019-07-13T17:13:36Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:datadriven.WordPress@490d6c15]" name="tearDown" is-config="true" duration-ms="1070" started-at="2019-07-13T23:31:13Z" finished-at="2019-07-13T23:31:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=WordPress.login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=WordPress.login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@490d6c15] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679]" name="login" duration-ms="8235" started-at="2019-07-13T17:13:36Z" data-provider="providelogininfo" finished-at="2019-07-13T17:13:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[opensourcecms]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[opensourcecms]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:datadriven.WordPress@29774679]" name="tearDown" is-config="true" duration-ms="855" started-at="2019-07-13T17:13:44Z" finished-at="2019-07-13T17:13:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=WordPress.login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679]" name="login" duration-ms="6171" started-at="2019-07-13T17:13:45Z" data-provider="providelogininfo" finished-at="2019-07-13T17:13:51Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@490d6c15]" name="login" duration-ms="6027" started-at="2019-07-13T23:31:14Z" data-provider="providelogininfo" finished-at="2019-07-13T23:31:21Z">
           <params>
             <param index="0">
               <value>
@@ -138,32 +99,20 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:datadriven.WordPress@29774679]" name="tearDown" is-config="true" duration-ms="1127" started-at="2019-07-13T17:13:51Z" finished-at="2019-07-13T17:13:53Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:datadriven.WordPress@490d6c15]" name="tearDown" is-config="true" duration-ms="1079" started-at="2019-07-13T23:31:21Z" finished-at="2019-07-13T23:31:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=WordPress.login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@29774679] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=WordPress.login(java.lang.String, java.lang.String)[pri:0, instance:datadriven.WordPress@490d6c15] output={null}]]]>
               </value>
             </param>
           </params>
@@ -171,6 +120,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- datadriven.WordPress -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

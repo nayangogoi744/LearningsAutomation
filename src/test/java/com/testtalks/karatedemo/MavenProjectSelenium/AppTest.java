@@ -28,7 +28,7 @@ public class AppTest {
 		   WebDriverManager.chromedriver().setup();
 		   ChromeOptions chromeOptions = new ChromeOptions();
 	       chromeOptions.addArguments("--verbose");
-	       chromeOptions.addArguments("--whitelisted-ips=''");
+	       chromeOptions.addArguments("--whitelisted-ips='192.168.0.101'");
 	       driver = new ChromeDriver(chromeOptions);
 	       driver.get("https://s1.demo.opensourcecms.com/wordpress/wp-login.php");
 	       driver.findElement(By.xpath("//input[@id='user_login']")).sendKeys(username);

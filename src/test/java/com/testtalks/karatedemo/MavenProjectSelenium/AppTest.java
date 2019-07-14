@@ -7,6 +7,7 @@ import java.util.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -25,7 +26,10 @@ public class AppTest {
 	@Test(dataProvider="providelogininfo")
 	public void login(String username,String password) throws InterruptedException{
 		   WebDriverManager.chromedriver().setup();
-	       driver = new ChromeDriver();
+		   ChromeOptions chromeOptions = new ChromeOptions();
+	       chromeOptions.addArguments("--verbose");
+	       chromeOptions.addArguments("--whitelisted-ips=''");
+	       driver = new ChromeDriver(chromeOptions);
 	       driver.get("https://s1.demo.opensourcecms.com/wordpress/wp-login.php");
 	       driver.findElement(By.xpath("//input[@id='user_login']")).sendKeys(username);
 	       driver.findElement(By.xpath("//input[@id='user_pass']")).sendKeys(password);

@@ -32,7 +32,7 @@ public class AppTest {
 
 		ChromeOptions options = new ChromeOptions();
 		//disable automation info bar
-		options.addArguments("--disable-gpu");
+		//options.addArguments("--disable-gpu");
 		options.addArguments("--no-sandbox");
 		driver =  new ChromeDriver(options);
 	       

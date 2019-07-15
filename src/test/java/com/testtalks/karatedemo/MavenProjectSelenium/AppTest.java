@@ -1,5 +1,7 @@
 package com.testtalks.karatedemo.MavenProjectSelenium;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,6 +10,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -24,12 +28,12 @@ public class AppTest {
     Date date;
 	
 	@Test(dataProvider="providelogininfo")
-	public void login(String username,String password) throws InterruptedException{
+	public void login(String username,String password) throws InterruptedException, MalformedURLException{
 		   WebDriverManager.chromedriver().setup();
-		   ChromeOptions chromeOptions = new ChromeOptions();
-	       chromeOptions.addArguments("--verbose");
-	       chromeOptions.addArguments("--whitelisted-ips='192.168.0.101'");
-	       driver = new ChromeDriver(chromeOptions);
+
+	       driver = new ChromeDriver();
+		   //WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), DesiredCapabilities.chrome());
+		   //WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), DesiredCapabilities.chrome());
 	       driver.get("https://s1.demo.opensourcecms.com/wordpress/wp-login.php");
 	       driver.findElement(By.xpath("//input[@id='user_login']")).sendKeys(username);
 	       driver.findElement(By.xpath("//input[@id='user_pass']")).sendKeys(password);

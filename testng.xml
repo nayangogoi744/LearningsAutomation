@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="methods">
  <test name="Test">
  <classes>
- <class name="datadriven.WordPress" />
+ <class name="com.testtalks.karatedemo.MavenProjectSelenium.AppTest" />
  
  </classes>
  </test> 

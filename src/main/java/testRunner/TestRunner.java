@@ -12,7 +12,7 @@ public class TestRunner {
 
 		TestNG runner = new TestNG();
 		List<String> list = new ArrayList<String>();
-		list.add("C:\\Users\\njy\\workspace\\MavenProjectSelenium\\test-output\\testng-failed.xml");
+		list.add("C:\\Users\\njy\\workspace\\MavenProjectSelenium\\test-output\\Suite\\testng-failed.xml");
 		runner.setTestSuites(list);
 		runner.run();
 	}

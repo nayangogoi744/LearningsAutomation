@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import library.Utility;
 
 public class AppTest {
@@ -25,9 +26,9 @@ public class AppTest {
 	
 	@Test(dataProvider="providelogininfo")
 	public void login(String username,String password) throws InterruptedException, MalformedURLException{
-		String exePath = "C:\\Old-data\\programming\\chromedriver_win32-75\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", exePath);
-		  // WebDriverManager.chromedriver().setup();
+		//String exePath = "C:\\Old-data\\programming\\chromedriver_win32-75\\chromedriver.exe";
+	//	System.setProperty("webdriver.chrome.driver", exePath);
+		 WebDriverManager.chromedriver().setup();
 
 		ChromeOptions options = new ChromeOptions();
 		//disable automation info bar

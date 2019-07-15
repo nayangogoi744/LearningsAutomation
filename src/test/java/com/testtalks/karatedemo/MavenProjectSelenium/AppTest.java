@@ -33,7 +33,7 @@ public class AppTest {
 		ChromeOptions options = new ChromeOptions();
 		//disable automation info bar
 		//options.addArguments("--disable-gpu");
-		options.addArguments("--no-sandbox");
+		//options.addArguments("--no-sandbox");
 		driver =  new ChromeDriver(options);
 	       
 		   //WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), DesiredCapabilities.chrome());

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22711" started-at="2019-07-15T05:34:15Z" finished-at="2019-07-15T05:34:38Z">
+  <suite name="Default suite" duration-ms="33898" started-at="2019-07-15T06:04:38Z" finished-at="2019-07-15T06:05:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22711" started-at="2019-07-15T05:34:15Z" finished-at="2019-07-15T05:34:38Z">
+    <test name="Default test" duration-ms="33898" started-at="2019-07-15T06:04:38Z" finished-at="2019-07-15T06:05:12Z">
       <class name="com.testtalks.karatedemo.MavenProjectSelenium.AppTest">
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="6725" started-at="2019-07-15T11:04:15Z" data-provider="providelogininfo" finished-at="2019-07-15T11:04:22Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="9691" started-at="2019-07-15T11:34:38Z" data-provider="providelogininfo" finished-at="2019-07-15T11:34:47Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:48)
+	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1186" started-at="2019-07-15T11:04:22Z" finished-at="2019-07-15T11:04:23Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1174" started-at="2019-07-15T11:34:47Z" finished-at="2019-07-15T11:34:49Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="6899" started-at="2019-07-15T11:04:23Z" data-provider="providelogininfo" finished-at="2019-07-15T11:04:30Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="15537" started-at="2019-07-15T11:34:49Z" data-provider="providelogininfo" finished-at="2019-07-15T11:35:04Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="870" started-at="2019-07-15T11:04:30Z" finished-at="2019-07-15T11:04:31Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-07-15T11:35:04Z" finished-at="2019-07-15T11:35:05Z">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="5772" started-at="2019-07-15T11:04:31Z" data-provider="providelogininfo" finished-at="2019-07-15T11:04:37Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="5546" started-at="2019-07-15T11:35:05Z" data-provider="providelogininfo" finished-at="2019-07-15T11:35:11Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:48)
+	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -159,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1231" started-at="2019-07-15T11:04:37Z" finished-at="2019-07-15T11:04:38Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1115" started-at="2019-07-15T11:35:11Z" finished-at="2019-07-15T11:35:12Z">
           <params>
             <param index="0">
               <value>

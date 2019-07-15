@@ -29,7 +29,9 @@ public class AppTest {
 	
 	@Test(dataProvider="providelogininfo")
 	public void login(String username,String password) throws InterruptedException, MalformedURLException{
-		   WebDriverManager.chromedriver().setup();
+		String exePath = "C:\\Old-data\\programming\\chromedriver_win32\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		  // WebDriverManager.chromedriver().setup();
 
 	       driver = new ChromeDriver();
 		   //WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:9515"), DesiredCapabilities.chrome());

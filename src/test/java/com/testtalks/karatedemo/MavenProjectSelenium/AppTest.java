@@ -1,7 +1,6 @@
 package com.testtalks.karatedemo.MavenProjectSelenium;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -10,15 +9,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import library.Utility;
 
 public class AppTest {
@@ -29,7 +25,7 @@ public class AppTest {
 	
 	@Test(dataProvider="providelogininfo")
 	public void login(String username,String password) throws InterruptedException, MalformedURLException{
-		String exePath = "C:\\Old-data\\programming\\chromedriver_win32\\chromedriver.exe";
+		String exePath = "C:\\Old-data\\programming\\chromedriver_win32-75\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", exePath);
 		  // WebDriverManager.chromedriver().setup();
 
@@ -48,6 +44,7 @@ public class AppTest {
 	       Thread.sleep(2000);
 	       //System.out.println(driver.getTitle());
 	       String title = driver.getTitle();
+	     
 	      
 	     //  Assert.assertTrue(driver.getTitle().contains("Dashboard"),"Unable to login using the provided info");
 	       Assert.assertEquals("Dashboard ‹ opensourcecms — WordPress", title);	       

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33898" started-at="2019-07-15T06:04:38Z" finished-at="2019-07-15T06:05:12Z">
+  <suite name="Default suite" duration-ms="23100" started-at="2019-07-15T09:39:30Z" finished-at="2019-07-15T09:39:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33898" started-at="2019-07-15T06:04:38Z" finished-at="2019-07-15T06:05:12Z">
+    <test name="Default test" duration-ms="23100" started-at="2019-07-15T09:39:30Z" finished-at="2019-07-15T09:39:53Z">
       <class name="com.testtalks.karatedemo.MavenProjectSelenium.AppTest">
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="9691" started-at="2019-07-15T11:34:38Z" data-provider="providelogininfo" finished-at="2019-07-15T11:34:47Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="7182" started-at="2019-07-15T15:09:30Z" data-provider="providelogininfo" finished-at="2019-07-15T15:09:37Z">
           <params>
             <param index="0">
               <value>
@@ -22,17 +22,15 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Log In ‹ opensourcecms — WordPress] but found [Dashboard ‹ opensourcecms — WordPress]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Log In ‹ opensourcecms — WordPress] but found [Dashboard ‹ opensourcecms — WordPress]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:53)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1174" started-at="2019-07-15T11:34:47Z" finished-at="2019-07-15T11:34:49Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1156" started-at="2019-07-15T15:09:37Z" finished-at="2019-07-15T15:09:38Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="15537" started-at="2019-07-15T11:34:49Z" data-provider="providelogininfo" finished-at="2019-07-15T11:35:04Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="6819" started-at="2019-07-15T15:09:38Z" data-provider="providelogininfo" finished-at="2019-07-15T15:09:45Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="807" started-at="2019-07-15T11:35:04Z" finished-at="2019-07-15T11:35:05Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="830" started-at="2019-07-15T15:09:45Z" finished-at="2019-07-15T15:09:46Z">
           <params>
             <param index="0">
               <value>
@@ -102,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="5546" started-at="2019-07-15T11:35:05Z" data-provider="providelogininfo" finished-at="2019-07-15T11:35:11Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="login" duration-ms="5978" started-at="2019-07-15T15:09:46Z" data-provider="providelogininfo" finished-at="2019-07-15T15:09:52Z">
           <params>
             <param index="0">
               <value>
@@ -117,17 +115,15 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Log In ‹ opensourcecms — WordPress] but found [Dashboard ‹ opensourcecms — WordPress]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Log In ‹ opensourcecms — WordPress] but found [Dashboard ‹ opensourcecms — WordPress]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:53)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.testtalks.karatedemo.MavenProjectSelenium.AppTest.login(AppTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -159,7 +155,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1115" started-at="2019-07-15T11:35:11Z" finished-at="2019-07-15T11:35:12Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testtalks.karatedemo.MavenProjectSelenium.AppTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="1107" started-at="2019-07-15T15:09:52Z" finished-at="2019-07-15T15:09:53Z">
           <params>
             <param index="0">
               <value>

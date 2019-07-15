@@ -43,11 +43,12 @@ public class AppTest {
 	       driver.findElement(By.xpath("//input[@id='wp-submit']")).click();
 	       Thread.sleep(2000);
 	       //System.out.println(driver.getTitle());
-	       String title = driver.getTitle();
+	       boolean title = driver.getTitle().contains("Dashboard");
 	     
 	      
 	     //  Assert.assertTrue(driver.getTitle().contains("Dashboard"),"Unable to login using the provided info");
-	       Assert.assertEquals("Dashboard ‹ opensourcecms — WordPress", title);	       
+	       //Assert.assertEquals("Dashboard ‹ opensourcecms — WordPress", title);	  
+	       Assert.assertTrue(title);
 	       System.out.println("Successfully login");
 	      
 	}

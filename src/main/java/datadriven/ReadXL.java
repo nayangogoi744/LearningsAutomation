@@ -14,7 +14,6 @@ public class ReadXL {
 		
 			File src = new File("C:\\Old-data\\Projects\\testdata\\loginInfo.xlsx");
 			FileInputStream stream = new FileInputStream(src);
-		   // FileOutputStream fileOut = new FileOutputStream(src);
 			XSSFWorkbook wm = new XSSFWorkbook(stream);
 			XSSFSheet sheet1 = wm.getSheetAt(0);
 			String value1 = sheet1.getRow(0).getCell(0).getStringCellValue();

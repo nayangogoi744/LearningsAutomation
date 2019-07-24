@@ -1,1 +1,4 @@
 This is to show case why we need @AfterMethod
+eg ; For hardAssert if the assertion fails the execution will stop at that position. Rest of the code will be uncovered
+So if you have a code which will close the browser , it will not be executed. Hence your browser will stay open.
+In this condition if you put @AfterMethod with proper close tag, it will execute after each Test and close the browser.
